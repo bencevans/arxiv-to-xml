@@ -1,0 +1,38 @@
+{
+  "name": "arxiv-to-xml",
+  "version": "0.0.0",
+  "description": "Generate XML representation of an arXiv paper using latexml",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "debug": "^4.1.0",
+    "download": "^7.1.0",
+    "file-type": "^10.0.0",
+    "execa": "^1.0.0",
+    "fs-extra": "^7.0.0",
+    "tape": "^4.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bencevans/arxiv-to-xml.git"
+  },
+  "keywords": [
+    "arxiv",
+    "latexml",
+    "papers",
+    "research"
+  ],
+  "author": "Ben Evans <ben@bluechimp.io> (https://bencevans.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bencevans/arxiv-to-xml/issues"
+  },
+  "homepage": "https://github.com/bencevans/arxiv-to-xml#readme"
+}
