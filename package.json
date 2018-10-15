@@ -1,6 +1,6 @@
 {
   "name": "arxiv-to-xml",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Generate XML representation of an arXiv paper using latexml",
   "main": "index.js",
   "directories": {
