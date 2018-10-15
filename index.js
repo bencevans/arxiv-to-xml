@@ -8,10 +8,10 @@ const downloadOpts = {
   extract: true
 }
 
-module.exports = async function arxivToXML(id, downloadDir) {
+module.exports = async function arxivToXML (id, downloadDir) {
   downloadDir = downloadDir || path.resolve(process.cwd(), 'raw/', id)
   const ePrintUrl = `https://arxiv.org/e-print/${id}`
-  
+
   debug(`downloading ${ePrintUrl}`)
   await download(ePrintUrl, `raw/${id}`, downloadOpts)
   debug(`download complete`)
@@ -19,7 +19,7 @@ module.exports = async function arxivToXML(id, downloadDir) {
   const texPath = await pickLatexFile(`raw/${id}`)
   debug(`texPath: ${texPath}`)
 
-  const {stdout} = await execa.shell(`latexml ${texPath}`)
+  const { stdout } = await execa.shell(`latexml ${texPath}`)
 
   return stdout
 }

@@ -13,8 +13,8 @@ const main = async (argv) => {
 }
 
 main(process.argv)
-.then(code => process.exit(code))
-.catch(err => {
-  console.error(err)
-  process.exit(1);
-})
+  .then(code => process.exit(code))
+  .catch(err => {
+    console.error(err)
+    process.exit(1)
+  })
